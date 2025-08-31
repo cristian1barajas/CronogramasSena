@@ -102,6 +102,29 @@
             display: none;
         }
 
+        /* Franja vertical reutilizable para cualquier celda */
+        td.vstripe {
+            position: relative;
+            padding-left: 15px; /* deja espacio para la franja */
+        }
+
+        /* La franja (igual ancho y radios que la col-week) */
+        td.vstripe::before {
+            content: '';
+            position: absolute;
+            left: 0; top: 0; bottom: 0;
+            width: 5px;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+
+        /* Colores disponibles */
+        td.vstripe.vs-green::before  { background: #39A900; }
+        td.vstripe.vs-blue::before   { background: #0077cc; }
+        td.vstripe.vs-cyan::before   { background: #0dcaf0; }
+        td.vstripe.vs-purple::before { background: #6f42c1; }
+        td.vstripe::before { display: block !important; }
+
         td.col-week::before {
             display: block;
         }
@@ -210,6 +233,22 @@
         .color-transparent {
             background-color: transparent !important;
         }
+
+        /* Fila separadora de semana (full-width) */
+        tr.week-divider td {
+        padding: 0;
+        height: 0;              /* no ocupa alto extra */
+        border: none;
+        }
+
+        tr.week-divider td::after {
+        content: '';
+        display: block;
+        height: 2px;
+        background: rgba(4, 50, 77, 0.18); /* azul cabeceras, muy suave */
+        border-radius: 999px;   /* bordes suaves */
+        margin: 4px 0;          /* pequeño respiro arriba/abajo */
+        }
     </style>
 </head>
 
@@ -272,7 +311,7 @@
                 </svg>
             </div>
             <div class="titles">
-                <h1>Cronograma de Actividades - Julio 2025</h1>
+                <h1>Cronograma de Actividades - Septiembre 2025</h1>
                 <h2>Programación de Software</h2>
             </div>
         </div>
@@ -296,251 +335,113 @@
             <tbody>
                 <!-- Grupo 1 - Verde (Semana 1) -->
                 <tr class="border-green">
-                    <td class="col-week border-green" rowspan="5">Semana 1</td>
+                    <td class="col-week" rowspan="2">Semana 1</td>
                     <td class="text-center">3138239</td>
-                    <td class="text-center">EJECUCIÓN</td>
-                    <td>AP3 - Construir el prototipo del software de acuerdo con el análisis de las características funcionales y de calidad.</td>
+                    <td class="text-center">EVALUACIÓN</td>
+                    <td>AP4 - Desarrollar las tareas de documentación y puesta en marcha del sistema de información.</td>
                     <td>220501096. Desarrollar la solución de software de acuerdo con el diseño y metodologías de desarrollo.</td>
-                    <td>220501096-02. Crear componentes front-end del software de acuerdo con las necesidades del cliente.</td>
-                    <td class="highlight-duplicate-green">Evidencia de Desempeño: Interfaz gráfica y mapa de navegación cumpliendo con reglas de usabilidad y accesibilidad. GA3-220501096-AA2-EV01.</td>
-                    <td class="text-center">12</td>
-                    <td class="text-center">Martes, 29 de julio de 2025</td>
-                    <td class="text-center">Lunes, 4 de agosto de 2025</td>
+                    <td>220501096-03. Codificar el software empleando el lenguaje de programación seleccionado.</td>
+                    <td class="vstripe vs-green highlight-duplicate-green">Evidencias de Producto: API del proyecto. GA4-220501096-AA1-EV01.</td>
+                    <td class="text-center">24</td>
+                    <td class="text-center">Lunes, 1 de septiembre de 2025</td>
+                    <td class="text-center">Domingo, 7 de septiembre de 2025</td>
                     <td class="text-center">Christian Barajas</td>
                 </tr>
-                <tr class="border-green">
-                    <td class="text-center">3138239</td>
-                    <td class="text-center">EJECUCIÓN</td>
-                    <td>AP3 - Construir el prototipo del software de acuerdo con el análisis de las características funcionales y de calidad.</td>
-                    <td>220501096. Desarrollar la solución de software de acuerdo con el diseño y metodologías de desarrollo.</td>
-                    <td>220501096-02. Crear componentes front-end del software de acuerdo con las necesidades del cliente.</td>
-                    <td class="highlight-duplicate-yellow">Evidencia de Desempeño: Diseño frontend que cumpla con los requerimientos del proyecto. GA3-220501096-AA2-EV02.</td>
-                    <td class="text-center">12</td>
-                    <td class="text-center">Martes, 29 de julio de 2025</td>
-                    <td class="text-center">Lunes, 4 de agosto de 2025</td>
-                    <td class="text-center">Christian Barajas</td>
-                </tr>
-                <tr class="border-purple">
+                <tr>
                     <td class="text-center">3138239</td>
                     <td class="text-center">EVALUACIÓN</td>
                     <td>AP4 - Desarrollar las tareas de documentación y puesta en marcha del sistema de información.</td>
-                    <td>210201501. Ejercer derechos fundamentales del trabajo en el marco de la constitución política y los convenios internacionales.</td>
-                    <td>210201501-01. Reconocer el trabajo como factor de movilidad social y transformación vital con referencia a la fenomenología y a los derechos fundamentales en el trabajo.</td>
-                    <td>Evidencia de conocimiento: Taller GA5-210201501-AA1-EV01</td>
-                    <td class="text-center">6</td>
-                    <td class="text-center">Martes, 29 de julio de 2025</td>
-                    <td class="text-center">Lunes, 4 de agosto de 2025</td>
-                    <td class="text-center">Zahira Franco</td>
+                    <td>240201533. Fomentar cultura emprendedora según habilidades y competencias personales.</td>
+                    <td>240201533-01. Establecer características y competencias emprendedoras personales de acuerdo con sus potencialidades, objetivos y el entorno.</td>
+                    <td class="vstripe vs-green">Evidencia de producto: Diana de valoración. GA4-240201533-AA1-EV01</td>
+                    <td class="text-center">7</td>
+                    <td class="text-center">Lunes, 1 de septiembre de 2025</td>
+                    <td class="text-center">Domingo, 7 de septiembre de 2025</td>
+                    <td class="text-center">Magda Rodríguez</td>
                 </tr>
-                <tr class="border-purple">
-                    <td class="text-center">3138239</td>
-                    <td class="text-center">EVALUACIÓN</td>
-                    <td>AP4 - Desarrollar las tareas de documentación y puesta en marcha del sistema de información.</td>
-                    <td>210201501. Ejercer derechos fundamentales del trabajo en el marco de la constitución política y los convenios internacionales.</td>
-                    <td>210201501-01. Reconocer el trabajo como factor de movilidad social y transformación vital con referencia a la fenomenología y a los derechos fundamentales en el trabajo.</td>
-                    <td>Evidencia de desempeño: Foro sobre características del trabajo en contexto local. GA5-210201501-AA1-EV02</td>
-                    <td class="text-center">6</td>
-                    <td class="text-center">Martes, 29 de julio de 2025</td>
-                    <td class="text-center">Lunes, 4 de agosto de 2025</td>
-                    <td class="text-center">Zahira Franco</td>
-                </tr>
-                <tr class="border-purple">
-                    <td class="text-center">3138239</td>
-                    <td class="text-center">EVALUACIÓN</td>
-                    <td>AP4 - Desarrollar las tareas de documentación y puesta en marcha del sistema de información.</td>
-                    <td>210201501. Ejercer derechos fundamentales del trabajo en el marco de la constitución política y los convenios internacionales.</td>
-                    <td>210201501-02. Valorar la importancia de la ciudadanía laboral con base en el estudio de los derechos humanos y fundamentales en el trabajo.</td>
-                    <td>Evidencia de producto: Informe sobre trabajo decente, ciudadanía laboral, derechos individuales y colectivos en el trabajo. GA5-210201501-AA2-EV01</td>
-                    <td class="text-center">3</td>
-                    <td class="text-center">Martes, 29 de julio de 2025</td>
-                    <td class="text-center">Lunes, 4 de agosto de 2025</td>
-                    <td class="text-center">Zahira Franco</td>
-                </tr>
+                <!-- LÍNEA DIVISORIA -->
+                <tr class="week-divider"><td colspan="11"></td></tr>
                 <!-- Grupo 2 - Azul (Semana 2) -->
                 <tr class="border-blue">
-                    <td class="col-week border-blue" rowspan="5">Semana 2</td>
+                    <td class="col-week" rowspan="2">Semana 2</td>
                     <td class="text-center">3138239</td>
-                    <td class="text-center">EJECUCIÓN</td>
-                    <td>AP3 - Construir el prototipo del software de acuerdo con el análisis de las características funcionales y de calidad.</td>
+                    <td class="text-center">EVALUACIÓN</td>
+                    <td>AP4 - Desarrollar las tareas de documentación y puesta en marcha del sistema de información.</td>
                     <td>220501096. Desarrollar la solución de software de acuerdo con el diseño y metodologías de desarrollo.</td>
-                    <td>220501096-02. Crear componentes front-end del software de acuerdo con las necesidades del cliente.</td>
-                    <td class="highlight-duplicate-green">Evidencia de Desempeño: Interfaz gráfica y mapa de navegación cumpliendo con reglas de usabilidad y accesibilidad. GA3-220501096-AA2-EV01.</td>
-                    <td class="text-center">12</td>
-                    <td class="text-center">Martes, 5 de agosto de 2025</td>
-                    <td class="text-center">Lunes, 11 de agosto de 2025</td>
+                    <td>220501096-03. Codificar el software empleando el lenguaje de programación seleccionado.</td>
+                    <td class="vstripe vs-blue highlight-duplicate-green">Evidencias de Producto: API del proyecto. GA4-220501096-AA1-EV01.</td>
+                    <td class="text-center">24</td>
+                    <td class="text-center">Lunes, 8 de septiembre de 2025</td>
+                    <td class="text-center">Domingo, 14 de septiembre de 2025</td>
                     <td class="text-center">Christian Barajas</td>
                 </tr>
-                <tr class="border-green">
-                    <td class="text-center">3138239</td>
-                    <td class="text-center">EJECUCIÓN</td>
-                    <td>AP3 - Construir el prototipo del software de acuerdo con el análisis de las características funcionales y de calidad.</td>
-                    <td>220501096. Desarrollar la solución de software de acuerdo con el diseño y metodologías de desarrollo.</td>
-                    <td>220501096-02. Crear componentes front-end del software de acuerdo con las necesidades del cliente.</td>
-                    <td class="highlight-duplicate-yellow">Evidencia de Desempeño: Diseño frontend que cumpla con los requerimientos del proyecto. GA3-220501096-AA2-EV02.</td>
-                    <td class="text-center">12</td>
-                    <td class="text-center">Martes, 5 de agosto de 2025</td>
-                    <td class="text-center">Lunes, 11 de agosto de 2025</td>
-                    <td class="text-center">Christian Barajas</td>
-                </tr>
-                <tr class="border-purple">
+                <tr>
                     <td class="text-center">3138239</td>
                     <td class="text-center">EVALUACIÓN</td>
                     <td>AP4 - Desarrollar las tareas de documentación y puesta en marcha del sistema de información.</td>
-                    <td>210201501. Ejercer derechos fundamentales del trabajo en el marco de la constitución política y los convenios internacionales.</td>
-                    <td>210201501-02. Valorar la importancia de la ciudadanía laboral con base en el estudio de los derechos humanos y fundamentales en el trabajo.</td>
-                    <td>Evidencia de desempeño: Foro sobre el convenio colectivo del trabajo y la libertad sindical. GA5-210201501-AA2-EV02</td>
-                    <td class="text-center">3</td>
-                    <td class="text-center">Martes, 5 de agosto de 2025</td>
-                    <td class="text-center">Lunes, 11 de agosto de 2025</td>
-                    <td class="text-center">Zahira Franco</td>
+                    <td>240201533. Fomentar cultura emprendedora según habilidades y competencias personales.</td>
+                    <td>240201533-01. Establecer características y competencias emprendedoras personales de acuerdo con sus potencialidades, objetivos y el entorno.</td>
+                    <td class="vstripe vs-blue">Evidencia de producto: Taller visión emprendedora. GA4-240201533-AA1-EV02</td>
+                    <td class="text-center">7</td>
+                    <td class="text-center">Lunes, 8 de septiembre de 2025</td>
+                    <td class="text-center">Domingo, 14 de septiembre de 2025</td>
+                    <td class="text-center">Magda Rodríguez</td>
                 </tr>
-                <tr class="border-purple">
-                    <td class="text-center">3138239</td>
-                    <td class="text-center">EVALUACIÓN</td>
-                    <td>AP4 - Desarrollar las tareas de documentación y puesta en marcha del sistema de información.</td>
-                    <td>210201501. Ejercer derechos fundamentales del trabajo en el marco de la constitución política y los convenios internacionales.</td>
-                    <td>210201501-02. Valorar la importancia de la ciudadanía laboral con base en el estudio de los derechos humanos y fundamentales en el trabajo.</td>
-                    <td>Evidencia de conocimiento: Gráfico sobre la negociación colectiva. GA5-210201501-AA2-EV03</td>
-                    <td class="text-center">3</td>
-                    <td class="text-center">Martes, 5 de agosto de 2025</td>
-                    <td class="text-center">Lunes, 11 de agosto de 2025</td>
-                    <td class="text-center">Zahira Franco</td>
-                </tr>
-                <tr class="border-purple">
-                    <td class="text-center">3138239</td>
-                    <td class="text-center">EVALUACIÓN</td>
-                    <td>AP4 - Desarrollar las tareas de documentación y puesta en marcha del sistema de información.</td>
-                    <td>210201501. Ejercer derechos fundamentales del trabajo en el marco de la constitución política y los convenios internacionales.</td>
-                    <td>210201501-02. Valorar la importancia de la ciudadanía laboral con base en el estudio de los derechos humanos y fundamentales en el trabajo.</td>
-                    <td>Evidencia de conocimiento: Infografía sobre la huelga. GA5-210201501-AA2-EV04</td>
-                    <td class="text-center">3</td>
-                    <td class="text-center">Martes, 5 de agosto de 2025</td>
-                    <td class="text-center">Lunes, 11 de agosto de 2025</td>
-                    <td class="text-center">Zahira Franco</td>
-                </tr>
+                <!-- LÍNEA DIVISORIA -->
+                <tr class="week-divider"><td colspan="11"></td></tr>
                 <!-- Grupo 3 - Cyan (Semana 3) -->
                 <tr class="border-cyan">
-                    <td class="col-week border-cyan" rowspan="5">Semana 3</td>
+                    <td class="col-week" rowspan="2">Semana 3</td>
                     <td class="text-center">3138239</td>
-                    <td class="text-center">EJECUCIÓN</td>
-                    <td>AP3 - Construir el prototipo del software de acuerdo con el análisis de las características funcionales y de calidad.</td>
+                    <td class="text-center">EVALUACIÓN</td>
+                    <td>AP4 - Desarrollar las tareas de documentación y puesta en marcha del sistema de información.</td>
                     <td>220501096. Desarrollar la solución de software de acuerdo con el diseño y metodologías de desarrollo.</td>
-                    <td>220501096-02. Crear componentes front-end del software de acuerdo con las necesidades del cliente.</td>
-                    <td class="highlight-duplicate-green">Evidencia de Desempeño: Interfaz gráfica y mapa de navegación cumpliendo con reglas de usabilidad y accesibilidad. GA3-220501096-AA2-EV01.</td>
-                    <td class="text-center">12</td>
-                    <td class="text-center">Martes, 12 de agosto de 2025</td>
-                    <td class="text-center">Lunes, 18 de agosto de 2025</td>
+                    <td>220501096-03. Codificar el software empleando el lenguaje de programación seleccionado.</td>
+                    <td class="vstripe vs-cyan highlight-duplicate-green">Evidencias de Producto: API del proyecto. GA4-220501096-AA1-EV01.</td>
+                    <td class="text-center">24</td>
+                    <td class="text-center">Lunes, 15 de septiembre de 2025</td>
+                    <td class="text-center">Domingo, 21 de septiembre de 2025</td>
                     <td class="text-center">Christian Barajas</td>
                 </tr>
-                <tr class="border-green">
-                    <td class="text-center">3138239</td>
-                    <td class="text-center">EJECUCIÓN</td>
-                    <td>AP3 - Construir el prototipo del software de acuerdo con el análisis de las características funcionales y de calidad.</td>
-                    <td>220501096. Desarrollar la solución de software de acuerdo con el diseño y metodologías de desarrollo.</td>
-                    <td>220501096-02. Crear componentes front-end del software de acuerdo con las necesidades del cliente.</td>
-                    <td class="highlight-duplicate-yellow">Evidencia de Desempeño: Diseño frontend que cumpla con los requerimientos del proyecto. GA3-220501096-AA2-EV02.</td>
-                    <td class="text-center">12</td>
-                    <td class="text-center">Martes, 12 de agosto de 2025</td>
-                    <td class="text-center">Lunes, 18 de agosto de 2025</td>
-                    <td class="text-center">Christian Barajas</td>
-                </tr>
-                <tr class="border-purple">
+                <tr>
                     <td class="text-center">3138239</td>
                     <td class="text-center">EVALUACIÓN</td>
                     <td>AP4 - Desarrollar las tareas de documentación y puesta en marcha del sistema de información.</td>
-                    <td>210201501. Ejercer derechos fundamentales del trabajo en el marco de la constitución política y los convenios internacionales.</td>
-                    <td>210201501-03. Practicar los derechos fundamentales en el trabajo de acuerdo con la constitución política y los convenios internacionales.</td>
-                    <td>Evidencia de conocimiento: Mapa mental violación de derechos del trabajo. GA5-210201501-AA3-EV01</td>
-                    <td class="text-center">3</td>
-                    <td class="text-center">Martes, 12 de agosto de 2025</td>
-                    <td class="text-center">Lunes, 18 de agosto de 2025</td>
-                    <td class="text-center">Zahira Franco</td>
+                    <td>240201533. Fomentar cultura emprendedora según habilidades y competencias personales.</td>
+                    <td>240201533-01. Establecer características y competencias emprendedoras personales de acuerdo con sus potencialidades, objetivos y el entorno.</td>
+                    <td class="vstripe vs-cyan">Evidencia de conocimiento: Taller dimensiones emprendedoras. GA4-240201533-AA1-EV03</td>
+                    <td class="text-center">7</td>
+                    <td class="text-center">Lunes, 15 de septiembre de 2025</td>
+                    <td class="text-center">Domingo, 21 de septiembre de 2025</td>
+                    <td class="text-center">Magda Rodríguez</td>
                 </tr>
-                <tr class="border-purple">
-                    <td class="text-center">3138239</td>
-                    <td class="text-center">EVALUACIÓN</td>
-                    <td>AP4 - Desarrollar las tareas de documentación y puesta en marcha del sistema de información.</td>
-                    <td>210201501. Ejercer derechos fundamentales del trabajo en el marco de la constitución política y los convenios internacionales.</td>
-                    <td>210201501-03. Practicar los derechos fundamentales en el trabajo de acuerdo con la constitución política y los convenios internacionales.</td>
-                    <td>Evidencia de desempeño: Foro estudio de caso. GA5-210201501-AA3-EV02</td>
-                    <td class="text-center">3</td>
-                    <td class="text-center">Martes, 12 de agosto de 2025</td>
-                    <td class="text-center">Lunes, 18 de agosto de 2025</td>
-                    <td class="text-center">Zahira Franco</td>
-                </tr>
-                <tr class="border-purple">
-                    <td class="text-center">3138239</td>
-                    <td class="text-center">EVALUACIÓN</td>
-                    <td>AP4 - Desarrollar las tareas de documentación y puesta en marcha del sistema de información.</td>
-                    <td>210201501. Ejercer derechos fundamentales del trabajo en el marco de la constitución política y los convenios internacionales.</td>
-                    <td>210201501-03. Practicar los derechos fundamentales en el trabajo de acuerdo con la constitución política y los convenios internacionales.</td>
-                    <td>Evidencia de conocimiento: Cuadro comparativo sobre el derecho de petición y la acción de tutela. GA5-210201501-AA3-EV03</td>
-                    <td class="text-center">3</td>
-                    <td class="text-center">Martes, 12 de agosto de 2025</td>
-                    <td class="text-center">Lunes, 18 de agosto de 2025</td>
-                    <td class="text-center">Zahira Franco</td>
-                </tr>
+                <!-- LÍNEA DIVISORIA -->
+                <tr class="week-divider"><td colspan="11"></td></tr>
                 <!-- Grupo 4 - Morado (Semana 4) -->
                 <tr class="border-purple">
-                    <td class="col-week border-purple" rowspan="5">Semana 4</td>
+                    <td class="col-week" rowspan="2">Semana 4</td>
                     <td class="text-center">3138239</td>
-                    <td class="text-center">EJECUCIÓN</td>
-                    <td>AP3 - Construir el prototipo del software de acuerdo con el análisis de las características funcionales y de calidad.</td>
+                    <td class="text-center">EVALUACIÓN</td>
+                    <td>AP4 - Desarrollar las tareas de documentación y puesta en marcha del sistema de información.</td>
                     <td>220501096. Desarrollar la solución de software de acuerdo con el diseño y metodologías de desarrollo.</td>
-                    <td>220501096-02. Crear componentes front-end del software de acuerdo con las necesidades del cliente.</td>
-                    <td class="highlight-duplicate-green">Evidencia de Desempeño: Interfaz gráfica y mapa de navegación cumpliendo con reglas de usabilidad y accesibilidad. GA3-220501096-AA2-EV01.</td>
-                    <td class="text-center">12</td>
-                    <td class="text-center">Martes, 19 de agosto de 2025</td>
-                    <td class="text-center">Lunes, 25 de agosto de 2025</td>
+                    <td>220501096-03. Codificar el software empleando el lenguaje de programación seleccionado.</td>
+                    <td class="vstripe vs-purple highlight-duplicate-green">Evidencias de Producto: API del proyecto. GA4-220501096-AA1-EV01.</td>
+                    <td class="text-center">24</td>
+                    <td class="text-center">Lunes, 22 de septiembre de 2025</td>
+                    <td class="text-center">Domingo, 28 de septiembre de 2025</td>
                     <td class="text-center">Christian Barajas</td>
                 </tr>
-                <tr class="border-green">
-                    <td class="text-center">3138239</td>
-                    <td class="text-center">EJECUCIÓN</td>
-                    <td>AP3 - Construir el prototipo del software de acuerdo con el análisis de las características funcionales y de calidad.</td>
-                    <td>220501096. Desarrollar la solución de software de acuerdo con el diseño y metodologías de desarrollo.</td>
-                    <td>220501096-02. Crear componentes front-end del software de acuerdo con las necesidades del cliente.</td>
-                    <td class="highlight-duplicate-yellow">Evidencia de Desempeño: Diseño frontend que cumpla con los requerimientos del proyecto. GA3-220501096-AA2-EV02.</td>
-                    <td class="text-center">12</td>
-                    <td class="text-center">Martes, 19 de agosto de 2025</td>
-                    <td class="text-center">Lunes, 25 de agosto de 2025</td>
-                    <td class="text-center">Christian Barajas</td>
-                </tr>
-                <tr class="border-purple">
+                <tr>
                     <td class="text-center">3138239</td>
                     <td class="text-center">EVALUACIÓN</td>
                     <td>AP4 - Desarrollar las tareas de documentación y puesta en marcha del sistema de información.</td>
-                    <td>210201501. Ejercer derechos fundamentales del trabajo en el marco de la constitución política y los convenios internacionales.</td>
-                    <td>210201501-03. Practicar los derechos fundamentales en el trabajo de acuerdo con la constitución política y los convenios internacionales.</td>
-                    <td>Evidencia de producto: Texto argumentativo. GA5-210201501-AA3-EV04</td>
-                    <td class="text-center">3</td>
-                    <td class="text-center">Martes, 19 de agosto de 2025</td>
-                    <td class="text-center">Lunes, 25 de agosto de 2025</td>
-                    <td class="text-center">Zahira Franco</td>
-                </tr>
-                <tr class="border-purple">
-                    <td class="text-center">3138239</td>
-                    <td class="text-center">EVALUACIÓN</td>
-                    <td>AP4 - Desarrollar las tareas de documentación y puesta en marcha del sistema de información.</td>
-                    <td>210201501. Ejercer derechos fundamentales del trabajo en el marco de la constitución política y los convenios internacionales.</td>
-                    <td>210201501-04. Participar en acciones solidarias teniendo en cuenta el ejercicio de los derechos humanos, de los pueblos y de la naturaleza.</td>
-                    <td>Evidencia de desempeño: Foro Estado social de derecho. GA5-210201501-AA4-EV01</td>
-                    <td class="text-center">6</td>
-                    <td class="text-center">Martes, 19 de agosto de 2025</td>
-                    <td class="text-center">Lunes, 25 de agosto de 2025</td>
-                    <td class="text-center">Zahira Franco</td>
-                </tr>
-                <tr class="border-purple">
-                    <td class="text-center">3138239</td>
-                    <td class="text-center">EVALUACIÓN</td>
-                    <td>AP4 - Desarrollar las tareas de documentación y puesta en marcha del sistema de información.</td>
-                    <td>210201501. Ejercer derechos fundamentales del trabajo en el marco de la constitución política y los convenios internacionales.</td>
-                    <td>210201501-04. Participar en acciones solidarias teniendo en cuenta el ejercicio de los derechos humanos, de los pueblos y de la naturaleza.</td>
-                    <td>Evidencia de producto: Presentación. GA5-210201501-AA4-EV02</td>
-                    <td class="text-center">6</td>
-                    <td class="text-center">Martes, 19 de agosto de 2025</td>
-                    <td class="text-center">Lunes, 25 de agosto de 2025</td>
-                    <td class="text-center">Zahira Franco</td>
+                    <td>240201533. Fomentar cultura emprendedora según habilidades y competencias personales.</td>
+                    <td>240201533-01. Establecer características y competencias emprendedoras personales de acuerdo con sus potencialidades, objetivos y el entorno.</td>
+                    <td class="vstripe vs-purple">Evidencia de desempeño: Taller toma de decisiones. GA4-240201533-AA2-EV01</td>
+                    <td class="text-center">7</td>
+                    <td class="text-center">Lunes, 22 de septiembre de 2025</td>
+                    <td class="text-center">Domingo, 28 de septiembre de 2025</td>
+                    <td class="text-center">Magda Rodríguez</td>
                 </tr>
             </tbody>
         </table>
