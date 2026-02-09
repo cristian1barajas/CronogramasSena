@@ -1,0 +1,82 @@
+================================================================
+ENTRADA DE CRONOGRAMA MENSUAL
+================================================================
+Llena este archivo y pidele a Claude:
+"Actualiza el cronograma con los datos de input_cronograma.txt"
+================================================================
+
+PROGRAMA: Analisis y Desarrollo de Software
+ARCHIVO_DESTINO: 1_adso_2025.html
+MES: Febrero
+ANIO: 2026
+FICHA: 3388997
+INSTRUCTOR: Christian Barajas
+
+================================================================
+SEMANAS DEL MES
+================================================================
+Indica las fechas de cada semana (lunes a domingo).
+Si una semana cruza de mes, incluirla si el lunes cae en el mes.
+
+SEMANA_1: 9 feb - 15 feb
+SEMANA_2: 16 feb - 22 feb
+SEMANA_3: 23 feb - 1 mar
+SEMANA_4: 2 mar - 8 mar
+
+================================================================
+DATOS COMUNES (aplican a todas las filas del mes)
+================================================================
+Si todas las semanas comparten la misma fase/actividad/competencia
+/resultado, ponlos aqui para no repetirlos en cada semana.
+
+FASE: ANÁLISIS
+ACTIVIDAD: AP1. Determinar las especificaciones funcionales del software y metodología a utilizar.
+COMPETENCIA: 220501092. Establecer requisitos de la solución de software de acuerdo con estándares y procedimiento técnico.
+RESULTADO: 220501092-01. Caracterizar los procesos de la organización de acuerdo con el software a construir.
+
+================================================================
+EVIDENCIAS POR SEMANA
+================================================================
+Formato por semana:
+  [SEMANA_N]
+  - Tipo | Descripcion completa. CODIGO | Horas
+
+Tipos validos: Conocimiento, Desempeno, Producto
+
+Si una semana tiene datos diferentes (otra fase, actividad, etc.)
+puedes sobreescribirlos asi:
+  [SEMANA_N]
+  FASE: EVALUACION
+  ACTIVIDAD: AP08 - Realizar pruebas del software.
+  ...evidencias...
+
+------
+
+[SEMANA_1]
+- Conocimiento | Infografía sobre la Teoría General de Sistemas. GA1-220501092-AA1-EV01. | 16
+- Conocimiento | Identificación de procesos organizacionales. GA1-220501092-AA1-EV02. | 16
+
+[SEMANA_2]
+- Producto | Mapa de procesos del software a construir. GA1-220501092-AA1-EV03. | 16
+RESULTADO: 220501092-02. Recolectar información del software a construir de acuerdo con las necesidades del cliente.
+- Conocimiento | Mapa mental sobre ingeniería de requisitos. GA1-220501092-AA2-EV01 | 6
+- Desempeno | Foro temático. Fuentes de requisitos. GA1-220501092-AA2-EV02 | 6
+
+[SEMANA_3]
+COMPETENCIA: 220501093. Evaluar requisitos de la solución de software de acuerdo con metodologías de análisis y estándares.
+RESULTADO: 220501093-01. Planear actividades de análisis de acuerdo con la metodología seleccionada.
+- Conocimiento | Taller sobre metodologías de desarrollo de software. GA1-220501093-AA1-EV01. | 24
+- Conocimiento | Infografía sobre metodologías de desarrollo de software. GA1-220501093-AA1-EV02. | 24
+
+[SEMANA_4]
+COMPETENCIA: 220501046. Utilizar herramientas informáticas de acuerdo con necesidades de manejo de información.
+RESULTADO: 220501046-01. Alistar herramientas de Tecnologías de la Información y la Comunicación (TIC), de acuerdo con las necesidades de procesamiento de información y comunicación.
+- Producto | Taller sobre metodologías de desarrollo de software. GA1-220501093-AA1-EV01. | 12
+RESULTADO: 220501046-02. Aplicar funcionalidades de herramientas y servicios TIC, de acuerdo con manuales de uso, procedimientos establecidos y buenas prácticas. 220501046-03. Evaluar los resultados, de acuerdo con los requerimientos.
+- Conocimiento | Infografía sobre metodologías de desarrollo de software. GA1-220501093-AA1-EV02. | 24
+RESULTADO: 220501046-04. Optimizar los resultados, de acuerdo con la verificación.
+- Desempeño | Infografía sobre metodologías de desarrollo de software. GA1-220501093-AA1-EV02. | 12
+
+================================================================
+FIN DE LA ENTRADA
+================================================================

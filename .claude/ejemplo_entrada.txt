@@ -1,0 +1,101 @@
+================================================================
+EJEMPLO REAL - Cronograma Noviembre 2025 (ya generado)
+================================================================
+Este archivo muestra como se lleno el input para generar
+el cronograma de noviembre 2025 que esta en 1_adso_2025.html
+
+================================================================
+
+PROGRAMA: Analisis y Desarrollo de Software
+ARCHIVO_DESTINO: 1_adso_2025.html
+MES: Noviembre
+ANIO: 2025
+FICHA: 2977396
+INSTRUCTOR: Christian Barajas
+
+SEMANA_1: 10 nov - 16 nov
+SEMANA_2: 17 nov - 23 nov
+SEMANA_3: 24 nov - 30 nov
+SEMANA_4: 1 dic - 7 dic
+
+FASE: EJECUCION
+ACTIVIDAD: AP07 - Codificar los modulos del software.
+COMPETENCIA: 220501096 - Desarrollar la solucion de software de acuerdo con el diseno y metodologias de desarrollo.
+RESULTADO: 220501096-04 - Codificar el software de acuerdo con el diseno establecido.
+
+[SEMANA_1]
+- Conocimiento | Taller sobre componentes frontend. GA7-220501096-AA4-EV01 | 24
+- Desempeno | Verificacion de procedimientos para la definicion de componentes frontend de la aplicacion (listas de chequeo). GA7-220501096-AA4-EV02 | 20
+
+[SEMANA_2]
+- Conocimiento | Taller sobre componentes frontend. GA7-220501096-AA4-EV01 | 24
+- Producto | Componente frontend del proyecto formativo y proyectos de clase (listas de chequeo). GA7-220501096-AA4-EV03 | 20
+
+[SEMANA_3]
+- Conocimiento | Taller sobre componentes frontend. GA7-220501096-AA4-EV01 | 24
+- Desempeno | Diseno y desarrollo de servicios web - caso. GA7-220501096-AA5-EV01 | 20
+
+[SEMANA_4]
+- Conocimiento | Taller sobre componentes frontend. GA7-220501096-AA4-EV01 | 24
+- Desempeno | Diseno y desarrollo de servicios web - caso. GA7-220501096-AA5-EV01 | 20
+
+================================================================
+RESULTADO: El archivo 1_adso_2025.html generado tiene:
+- Titulo: "Cronograma de Actividades - Noviembre 2025"
+- 4 semanas con colores: green, blue, cyan, purple
+- 2 evidencias por semana (rowspan=2)
+- Fechas formateadas: "Lunes, 10 de noviembre de 2025"
+- Lineas divisorias entre semanas
+================================================================
+
+
+================================================================
+EJEMPLO 2: Mes con cambio de datos a mitad de mes
+================================================================
+Esto muestra como sobreescribir datos para semanas especificas.
+
+PROGRAMA: Analisis y Desarrollo de Software
+ARCHIVO_DESTINO: 1_adso_2025.html
+MES: Marzo
+ANIO: 2026
+FICHA: 2977396
+INSTRUCTOR: Christian Barajas
+
+SEMANA_1: 2 mar - 8 mar
+SEMANA_2: 9 mar - 15 mar
+SEMANA_3: 16 mar - 22 mar
+SEMANA_4: 23 mar - 29 mar
+
+FASE: EJECUCION
+ACTIVIDAD: AP07 - Codificar los modulos del software.
+COMPETENCIA: 220501096 - Desarrollar la solucion de software de acuerdo con el diseno y metodologias de desarrollo.
+RESULTADO: 220501096-04 - Codificar el software de acuerdo con el diseno establecido.
+
+[SEMANA_1]
+- Producto | Taller sobre servicios web. GA7-220501096-AA5-EV02 | 24
+- Desempeno | Diseno y desarrollo de servicios web - caso. GA7-220501096-AA5-EV01 | 20
+
+[SEMANA_2]
+- Conocimiento | Taller sobre servicios web. GA7-220501096-AA5-EV02 | 24
+- Producto | Servicios web del proyecto formativo (listas de chequeo). GA7-220501096-AA5-EV03 | 20
+
+[SEMANA_3]
+FASE: EVALUACION
+ACTIVIDAD: AP08 - Realizar pruebas del software.
+COMPETENCIA: 220501096 - Desarrollar la solucion de software de acuerdo con el diseno y metodologias de desarrollo.
+RESULTADO: 220501096-05 - Probar el software de acuerdo con el plan de pruebas.
+- Conocimiento | Taller sobre pruebas de software. GA8-220501096-AA1-EV01 | 24
+- Desempeno | Ejecucion de pruebas unitarias (listas de chequeo). GA8-220501096-AA1-EV02 | 20
+
+[SEMANA_4]
+FASE: EVALUACION
+ACTIVIDAD: AP08 - Realizar pruebas del software.
+COMPETENCIA: 220501096 - Desarrollar la solucion de software de acuerdo con el diseno y metodologias de desarrollo.
+RESULTADO: 220501096-05 - Probar el software de acuerdo con el plan de pruebas.
+- Conocimiento | Taller sobre pruebas de software. GA8-220501096-AA1-EV01 | 24
+- Producto | Informe de pruebas del proyecto formativo. GA8-220501096-AA1-EV03 | 20
+
+================================================================
+NOTA: Las semanas 3 y 4 sobreescriben la fase, actividad,
+competencia y resultado porque cambian a mitad de mes.
+================================================================

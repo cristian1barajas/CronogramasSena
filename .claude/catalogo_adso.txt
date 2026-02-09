@@ -1,0 +1,102 @@
+================================================================
+CATALOGO CURRICULAR - ADSO (Analisis y Desarrollo de Software)
+Ficha: 2977396
+================================================================
+
+Este archivo contiene las competencias, resultados y evidencias
+del programa ADSO. Usalo como referencia para llenar el input.
+
+Puedes agregar nuevas entradas a medida que avances en la formacion.
+
+----------------------------------------------------------------
+FASES DEL PROGRAMA
+----------------------------------------------------------------
+- ANALISIS
+- PLANEACION
+- EJECUCION
+- EVALUACION
+
+----------------------------------------------------------------
+ACTIVIDADES DE PROYECTO (AP)
+----------------------------------------------------------------
+AP01 - Identificar el problema o necesidad.
+AP02 - Analizar los requisitos del software.
+AP03 - Disenar la arquitectura del software.
+AP04 - Disenar la base de datos.
+AP05 - Disenar la interfaz de usuario.
+AP06 - Construir la base de datos.
+AP07 - Codificar los modulos del software.
+AP08 - Realizar pruebas del software.
+AP09 - Implementar el software.
+AP10 - Dar soporte al software.
+
+----------------------------------------------------------------
+COMPETENCIAS
+----------------------------------------------------------------
+
+[C1] 220501096 - Desarrollar la solucion de software de acuerdo
+     con el diseno y metodologias de desarrollo.
+
+[C2] 220501095 - Analizar los requisitos del cliente para construir
+     la solucion de software.
+
+[C3] 220501097 - Disenar la solucion de software de acuerdo a
+     los requisitos del cliente.
+
+(Agrega mas competencias aqui a medida que las necesites)
+
+----------------------------------------------------------------
+RESULTADOS DE APRENDIZAJE
+----------------------------------------------------------------
+
+[C1-R01] 220501096-01 - Interpretar el diseno de la solucion de
+         software para la codificacion.
+[C1-R02] 220501096-02 - Construir la base de datos de acuerdo
+         con el diseno establecido.
+[C1-R03] 220501096-03 - Disenar la base de datos segun requisitos.
+[C1-R04] 220501096-04 - Codificar el software de acuerdo con el
+         diseno establecido.
+
+(Agrega mas resultados aqui a medida que los necesites)
+
+----------------------------------------------------------------
+EVIDENCIAS DE APRENDIZAJE (Catálogo)
+----------------------------------------------------------------
+
+Formato: [CODIGO] Tipo | Descripcion | Horas sugeridas
+
+--- Guia GA7 (Ejemplo - Codificacion Frontend) ---
+
+[GA7-220501096-AA4-EV01] Conocimiento
+  Taller sobre componentes frontend.
+  Horas sugeridas: 24
+
+[GA7-220501096-AA4-EV02] Desempeno
+  Verificacion de procedimientos para la definicion de componentes
+  frontend de la aplicacion (listas de chequeo).
+  Horas sugeridas: 20
+
+[GA7-220501096-AA4-EV03] Producto
+  Componente frontend del proyecto formativo y proyectos de clase
+  (listas de chequeo).
+  Horas sugeridas: 20
+
+[GA7-220501096-AA5-EV01] Desempeno
+  Diseno y desarrollo de servicios web - caso.
+  Horas sugeridas: 20
+
+(Agrega mas evidencias aqui conforme avances en las guias)
+
+----------------------------------------------------------------
+INSTRUCTORES
+----------------------------------------------------------------
+- Christian Barajas
+(Agrega mas instructores si es necesario)
+
+================================================================
+NOTAS:
+- Este catalogo es acumulativo. Agrega nuevas entradas cuando
+  aparezcan en el diseno curricular.
+- Los codigos [C1], [C1-R01], etc. son atajos para usar en el
+  archivo de entrada input_cronograma.txt
+================================================================
