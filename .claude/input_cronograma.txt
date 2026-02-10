@@ -71,11 +71,11 @@ RESULTADO: 220501093-01. Planear actividades de análisis de acuerdo con la meto
 [SEMANA_4]
 COMPETENCIA: 220501046. Utilizar herramientas informáticas de acuerdo con necesidades de manejo de información.
 RESULTADO: 220501046-01. Alistar herramientas de Tecnologías de la Información y la Comunicación (TIC), de acuerdo con las necesidades de procesamiento de información y comunicación.
-- Producto | Taller sobre metodologías de desarrollo de software. GA1-220501093-AA1-EV01. | 12
+- Producto | Mapa conceptual - Software y servicios de internet. Relacionar correctamente los tipos de software y servicios de internet. GA1-220501046-AA1-EV01 | 12
 RESULTADO: 220501046-02. Aplicar funcionalidades de herramientas y servicios TIC, de acuerdo con manuales de uso, procedimientos establecidos y buenas prácticas. 220501046-03. Evaluar los resultados, de acuerdo con los requerimientos.
-- Conocimiento | Infografía sobre metodologías de desarrollo de software. GA1-220501093-AA1-EV02. | 24
+- Conocimiento | Taller. Utilización de las herramientas de Ofimática. Realizar un taller práctico con las herramientas ofimáticas. GA1-220501046-AA2-EV01 | 24
 RESULTADO: 220501046-04. Optimizar los resultados, de acuerdo con la verificación.
-- Desempeño | Infografía sobre metodologías de desarrollo de software. GA1-220501093-AA1-EV02. | 12
+- Desempeño | Informe mejora de productos y procesos con la incorporación de TIC. GA1-220501046-AA3-EV01 | 12
 
 ================================================================
 FIN DE LA ENTRADA
